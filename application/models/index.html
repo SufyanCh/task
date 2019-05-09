@@ -1,0 +1,70 @@
+<?php
+    $clsdash = "active";
+    include_once 'section/metadata.php';
+    include_once 'section/header.php';
+    include_once 'section/aside.php';
+?>
+  
+   
+      <div class="content-wrapper">
+        <div class="page-title">
+          <div>
+            <h1><i class="fa fa-archive"></i> Dashboard</h1>
+            
+          </div>
+          <div>
+            <ul class="breadcrumb">
+              <li><i class="fa fa-home fa-lg"></i></li>
+              <li>UI</li>
+              <li><a href="<?= base_url('administrator'); ?>">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="widget-small primary"><i class="icon fa fa-users fa-3x"></i>
+              <div class="info">
+                <h4>Users</h4>
+                <p><b><?= $user; ?></b></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="widget-small info"><i class="icon fa fa-thumbs-o-up fa-3x"></i>
+              <div class="info">
+                <h4>Manager</h4>
+                <p><b><?= $manager; ?></b></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="widget-small warning"><i class="icon fa fa-files-o fa-3x"></i>
+              <div class="info">
+                <h4>admins</h4>
+                <p><b><?= $admin; ?></b></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="widget-small danger"><i class="icon fa fa-star fa-3x"></i>
+              <div class="info">
+                <h4>servisecs</h4>
+                <p><b>500</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <h3 class="card-title">Vector Map</h3>
+              <div class="card-body">
+                <div id="demo-map" style="height: 400px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <?php
+      include_once 'section/footer.php';
+  ?>
